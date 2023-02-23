@@ -1,15 +1,20 @@
+import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
-import { Text, View, TouchableOpacity } from 'react-native';
+import { Text, View, Image, TouchableOpacity } from 'react-native';
 
-import {styles} from './styles/styles';
+import {styles} from './style/styles';
 
 export default function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(10);
 
   return (
     <View style={styles.appContainer}>
+      <StatusBar style="auto" />
       <View style={styles.topContainer}>
-        <Text style={styles.textContainer}>Counter App : {count}</Text>
+        <Text style={styles.textContainer}>Counter App</Text>
+      </View>
+      <View style={styles.midContainer}>
+        <Text style={styles.textContainer}>{count}</Text>
       </View>
       <View style={styles.bottomContainer}>
         <TouchableOpacity onPress= {() => setCount(count - 1)}>
