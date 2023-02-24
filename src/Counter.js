@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
 import { Text, View, Image, TouchableOpacity } from 'react-native';
 import App from '../App';
-import {styles} from './style/styles';
+import {styles} from '../style/styles';
 
 export default function Counter() {
   const [count, setCount] = useState(10);
