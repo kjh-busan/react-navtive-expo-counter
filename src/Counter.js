@@ -17,12 +17,12 @@ export default function Counter() {
         <Text style={styles.textContainer}>{count}</Text>
       </View>
       <View style={styles.bottomContainer}>
-        <TouchableOpacity onPress= {() => setCount(count - 1)}>
+        <TouchableOpacity onPress= {() => setCount(count + 1)}>
           <Text style={styles.button}>+</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.bottomContainer}>
-        <TouchableOpacity onPress= {() => setCount(count + 1)}>
+        <TouchableOpacity onPress= {() => setCount(count - 1)}>
           <Text style={styles.button}>-</Text>
         </TouchableOpacity>
       </View>
